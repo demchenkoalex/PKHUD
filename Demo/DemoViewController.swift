@@ -19,7 +19,7 @@ class DemoViewController: UIViewController {
     }
 
     @IBAction func showAnimatedSuccessHUD(_ sender: AnyObject) {
-        HUD.flash(.success, delay: 2.0)
+        HUD.flash(.labeledSuccess(title: .none, subtitle: "Added to Library"), delay: 1.2)
     }
     
     @IBAction func showAnimatedErrorHUD(_ sender: AnyObject) {
